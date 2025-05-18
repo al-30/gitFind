@@ -1,13 +1,12 @@
 .conteudo {
+  display: flex;
   align-items: flex-start;
   position: relative;
-  display: flex;
   justify-content: flex-end;
 }
 .gitHub {
   height: 100vh;
   left: 0;
-  /* margin-left: -50%; */
   opacity: 10%;
   position: fixed;
 }
@@ -53,4 +52,24 @@
   text-align: center;
 }
 
-
+@media screen and (max-width: 450px) {
+  .gitHub {
+    display: none;
+  }
+  .search {
+    display: flex;
+  }
+  .conteudo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .info{
+    width: 100%;
+    margin: 15px;
+    text-align: left;
+  }
+  hr{
+    width: 90%;
+  }
+}
